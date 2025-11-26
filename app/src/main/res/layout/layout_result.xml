@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="32dp"
+        android:paddingBottom="24dp">
+
+        <!-- Original Text Card (Only visible in history mode) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/originalTextCard"
+            style="?attr/materialCardViewOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Original Text:"
+                    android:textAppearance="?attr/textAppearanceTitleSmall"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/originalTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:maxLines="10"
+                    android:ellipsize="end" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Circular Progress with Percentage -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/probabilityIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:indicatorSize="150dp"
+                app:indicatorColor="@color/accent_blue_dark"
+                app:trackColor="@color/grey_light"
+                app:trackCornerRadius="8dp"
+                app:trackThickness="16dp" />
+
+            <TextView
+                android:id="@+id/probabilityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="87%"
+                android:textAppearance="?attr/textAppearanceHeadlineLarge" />
+        </FrameLayout>
+
+        <!-- Prediction Label (AI-Generated / Human-Written) -->
+        <TextView
+            android:id="@+id/summaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="AI-Generated"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+        <!-- Reasons Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/reasonsCard"
+            style="?attr/materialCardViewOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="300dp">
+
+                <!-- Reasons Content -->
+                <TextView
+                    android:id="@+id/reasonsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Reasons:"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:lineSpacingExtra="4dp" />
+
+            </ScrollView>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Try Again / Back to History Button -->
+        <Button
+            android:id="@+id/tryAgainButton"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Try Again" />
+
+    </LinearLayout>
+
+</ScrollView>

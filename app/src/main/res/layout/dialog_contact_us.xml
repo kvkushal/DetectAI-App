@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Email Us Button -->
+    <Button
+        android:id="@+id/email_button"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Us"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:gravity="start|center_vertical"
+        app:cornerRadius="16dp" />
+
+    <!-- Report Bug Button -->
+    <Button
+        android:id="@+id/bug_button"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Report a Bug"
+        android:drawableLeft="@drawable/ic_bug"
+        android:drawablePadding="8dp"
+        android:gravity="start|center_vertical"
+        app:cornerRadius="16dp" />
+
+    <!-- Suggest Feature Button -->
+    <Button
+        android:id="@+id/feature_button"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Suggest a Feature"
+        android:drawableLeft="@drawable/ic_lightbulb"
+        android:drawablePadding="8dp"
+        android:gravity="start|center_vertical"
+        app:cornerRadius="16dp" />
+
+</LinearLayout>

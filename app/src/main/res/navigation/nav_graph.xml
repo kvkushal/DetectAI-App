@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_detect">
+
+    <!-- ✅ Changed IDs to match bottom_nav_menu items -->
+    <fragment
+        android:id="@+id/nav_detect"
+        android:name="com.example.detectai.DetectFragment"
+        android:label="Detect"
+        tools:layout="@layout/fragment_detect" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.detectai.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history">
+
+        <action
+            android:id="@+id/action_historyFragment_to_textDetectionFragment"
+            app:destination="@id/textDetectionFragment" />
+
+        <action
+            android:id="@+id/action_historyFragment_to_imageDetectionFragment"
+            app:destination="@id/imageDetectionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.detectai.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/imageDetectionFragment"
+        android:name="com.example.detectai.ImageDetectionFragment"
+        android:label="Image Detection"
+        tools:layout="@layout/fragment_image_detection">
+
+        <argument
+            android:name="type"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="result"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="originalData"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/textDetectionFragment"
+        android:name="com.example.detectai.TextDetectionFragment"
+        android:label="Text Detection"
+        tools:layout="@layout/fragment_text_detection">
+
+        <argument
+            android:name="type"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="result"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="originalData"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+</navigation>

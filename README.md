@@ -3,6 +3,42 @@ An open-source Android application that detects whether text or images are AI-ge
 
 ---
 
+## 🎥 Demo Video    
+**Demo:**
+https://github.com/user-attachments/assets/a4aee0a7-0289-4aa1-9054-23f60cacf650
+
+---
+
+## 📸 Screenshots  
+
+### **Detection Screens**
+| Text Result | Image Result |
+|------------|--------------|
+| ![Text Detection](screenshots/text_detection.jpg) | ![Image Detection](screenshots/image_detection.jpg) |
+
+### **Input Screens**
+| Image Input | Text Input |
+|-------------|------------|
+| ![Image Input](screenshots/Image_d.jpg) | ![Text Input](screenshots/text_d.jpg) |
+
+### **History Screen**
+![History](screenshots/history.jpg)
+
+### **Profile & Settings**
+| Profile | Settings |
+|---------|----------|
+| ![Profile](screenshots/Profile.jpg) | ![Settings](screenshots/Settings.jpg) |
+
+### **Help & FAQ**
+![FAQ](screenshots/FAQs.jpg)
+
+### **Authentication**
+| Login | Sign Up |
+|-------|---------|
+| ![Login](screenshots/Login.jpg) | ![Sign Up](screenshots/Signup.jpg) |
+
+---
+
 ## 📱 Features
 
 - Detects AI-generated **text**
@@ -27,8 +63,6 @@ Model used:
 Models used (ensemble):
 - `umm-maybe/AI-image-detector`
 - `Organika/sdxl-detector`
-
-The app sends text or image data to the backend and receives a probability score and a human-readable explanation.
 
 ---
 
@@ -79,8 +113,6 @@ The backend uses a Docker-based Space with a `Dockerfile` and CI/CD syncing via 
 ---
 
 ## 📁 Releases & APK Distribution
-
-The official APK is available in GitHub Releases.
 
 Releases include:
 - Version tag  

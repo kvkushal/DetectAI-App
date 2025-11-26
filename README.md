@@ -4,38 +4,36 @@ An open-source Android application that detects whether text or images are AI-ge
 ---
 
 ## 🎥 Demo Video    
-**Demo:**
-https://github.com/user-attachments/assets/a4aee0a7-0289-4aa1-9054-23f60cacf650
+**Demo:** [Watch the demo video](https://github.com/user-attachments/assets/a4aee0a7-0289-4aa1-9054-23f60cacf650)
 
 ---
 
-## 📸 Screenshots  
-
+## 📸 Screenshots
 ### **Detection Screens**
 | Text Result | Image Result |
 |------------|--------------|
-| ![Text Detection](screenshots/text_detection.jpg) | ![Image Detection](screenshots/image_detection.jpg) |
+| [Text Result Screenshot](screenshots/text_detection.jpg) | [Image Result Screenshot](screenshots/image_detection.jpg) |
 
 ### **Input Screens**
 | Image Input | Text Input |
 |-------------|------------|
-| ![Image Input](screenshots/Image_d.jpg) | ![Text Input](screenshots/text_d.jpg) |
+| [Image Input](screenshots/Image_d.jpg) | [Text Input](screenshots/text_d.jpg) |
 
 ### **History Screen**
-![History](screenshots/history.jpg)
+- [History Screen](screenshots/history.jpg)
 
 ### **Profile & Settings**
 | Profile | Settings |
 |---------|----------|
-| ![Profile](screenshots/Profile.jpg) | ![Settings](screenshots/Settings.jpg) |
+| [Profile Screen](screenshots/Profile.jpg) | [Settings Screen](screenshots/Settings.jpg) |
 
 ### **Help & FAQ**
-![FAQ](screenshots/FAQs.jpg)
+- [FAQ Screen](screenshots/FAQs.jpg)
 
 ### **Authentication**
 | Login | Sign Up |
 |-------|---------|
-| ![Login](screenshots/Login.jpg) | ![Sign Up](screenshots/Signup.jpg) |
+| [Login Screen](screenshots/Login.jpg) | [Sign Up Screen](screenshots/Signup.jpg) |
 
 ---
 
